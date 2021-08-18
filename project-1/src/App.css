@@ -1,0 +1,47 @@
+.container {
+  margin: 25px 31%;
+  width: 30%;
+  background-color: #efefef;
+  padding: 15px 50px;
+  box-shadow: 0px 0px 10px gray;
+}
+
+.income-expense-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: 0px 0px 10px gray;
+  margin: 20px;
+}
+
+.transaction-list {
+  list-style: none;
+  padding: 0;
+}
+
+.transaction-list li {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-right: 3px solid black;
+  box-shadow: 0px 0px 10px black;
+  margin: 10px 0px;
+}
+
+.transaction-list li button {
+  padding: 3px 5px;
+}
+
+.transaction-form input {
+  width: 98%;
+  margin: 5px 0px;
+}
+
+.transaction-list li.income {
+  border-right: 5px solid green;
+}
+
+.transaction-list li.expense {
+  border-right: 5px solid red;
+}
