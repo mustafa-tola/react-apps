@@ -1,21 +1,10 @@
 import React,{ createContext, useContext, useReducer } from "react"
 import { transReducer } from "./TransReducer";
 
-const transactions = [{
-    id: Math.random(),
-    amount: 100,
-    desc: "Cash",
-},
-{
-    id: Math.random(),
-    amount: -10,
-    desc: "Cold Drink",
-}]
-
-export const transContext = createContext(transactions);
+export const transContext = createContext([]);
 
 export const TransProvider = ({children}) => {
-    const [state,dispatch] = useReducer(transReducer,transactions)
+    const [state,dispatch] = useReducer(transReducer,[])
     function addTransaction(transaction) {
         dispatch({
             type: "ADD_TRANS",
